@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шахта монаха</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+
+    <div class="left-panel">
+        <div>
+            <h1>Эпоха Руды</h1>
+            <h3 id="current-rank">Статус: Раб</h3>
+        </div>
+
+        <button class="ore-button" id="ore-btn">Копаем!</button>
+
+        <div class="stats">
+            <div class="stat-line"><span>Золото:</span> <span id="gold-display">0</span></div>
+            <div class="stat-line"><span>Сила :</span> <span id="click-power-display">1</span></div>
+            <div class="stat-line"><span>Уровень:</span> <span id="mine-level-display">1</span></div>
+            
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="ore-hp-bar">100 / 100 HP</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="right-panel">
+        <h2>Иерархия сословий</h2>
+        <p class="subtitle">(Каждый копает руду сам)</p>
+        <div class="upgrades-container" id="upgrades-list">
+
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
